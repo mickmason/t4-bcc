@@ -1,0 +1,183 @@
+/*=== Blue ===*/
+a, a:hover {
+  color: red; }
+
+.topbar {
+  border-top: 1px solid red;
+  background-color: red; }
+
+.header .navbar-default .navbar-nav li a:hover {
+  color: red; }
+
+.header .navbar-default .navbar-nav .active a,
+.header .navbar-default .navbar-nav .active a:hover,
+.header .navbar-default .navbar-nav .active a:focus {
+  color: red; }
+
+.header .navbar-nav li.open .dropdown-menu li a:hover,
+.header .navbar-nav li.open .dropdown-menu li a:focus,
+.header .navbar-nav li.dropdown .dropdown-menu li a:hover,
+.header .navbar-nav li.dropdown .dropdown-menu li a:focus {
+  color: red !important; }
+
+@media (max-width: 767px) {
+  .header .navbar-nav li.open .dropdown-menu li a:hover,
+  .header .navbar-nav li.open .dropdown-menu li a:focus,
+  .header .navbar-nav li.dropdown .dropdown-menu li a:hover,
+  .header .navbar-nav li.dropdown .dropdown-menu li a:focus {
+    color: red !important; } }
+
+.header .navbar-nav li.open .dropdown-menu li.active a {
+  color: red !important; }
+
+.captionLink, .captionLink:hover {
+  background-color: red; }
+
+.learnBtn {
+  border: 1px solid red;
+  background: red; }
+
+.flex-control-paging li a.flex-active {
+  background: red; }
+
+.related_post_sec a.more_post {
+  border: 1px solid red; }
+
+.courses_right_inner th {
+  background: red; }
+
+.courses_right_inner td ul li.active a {
+  color: red; }
+
+.courses_right_inner td a:hover {
+  color: red; }
+
+.pagination > li > a, .pagination > li > span {
+  border: 1px solid red; }
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  border-color: red;
+  background: red; }
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+  border-color: red;
+  background: red; }
+
+.courses_left_inner ul li a:hover, .courses_left_inner ul li a:focus {
+  color: red; }
+
+.courses_left_inner ul li.active a {
+  color: red; }
+
+.item_inner a.fees {
+  color: red; }
+
+.sidebar_item.admission .item_inner.program ul li a {
+  color: red; }
+
+#single_banner .flex-control-paging li a.flex-active {
+  background: red; }
+
+.item_inner.slider .flex-direction-nav a {
+  border: 1px solid red; }
+
+.item_inner.question a {
+  color: red; }
+
+.tab_menu > ul li a:hover {
+  background: red;
+  border-color: red !important; }
+
+.tab_menu > ul li.active a {
+  background: red;
+  border-color: red !important; }
+
+.tab_menu > ul li.active a::after, .tab_menu > ul li a:hover::after {
+  border-top: 10px solid red; }
+
+.fc-center h2 {
+  color: red; }
+
+.fc-event-container a.more {
+  color: red; }
+
+.carousel-indicators li.active {
+  background: red; }
+
+ul.contact_info li .fa {
+  color: red; }
+
+ul.contact_info li a:hover {
+  color: red; }
+
+.error-content a {
+  color: red; }
+
+.price-title {
+  background: red; }
+
+@media (max-width: 767px) {
+  .header .navbar-default .navbar-nav li.apply_now a:hover {
+    color: red; }
+  .header .navbar-nav li.open .dropdown-menu li a:hover, .header .navbar-nav li.open .dropdown-menu li a:focus {
+    color: red; } }
+
+/*=== Green ===*/
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  border: 1px solid #49c32c;
+  background: #49c32c; }
+
+.caption_inner a {
+  background: #49c32c; }
+
+.features ul li:hover i {
+  color: #49c32c; }
+
+.content_top .content_left ul li:before {
+  color: #49c32c; }
+
+.thumb_title .author_designation a {
+  color: #49c32c; }
+
+.meta span a {
+  color: #49c32c; }
+
+.post_bottom ul li a span {
+  background: #49c32c; }
+
+.list_block {
+  border-top: 3px solid #49c32c; }
+
+.rel_right span.date a {
+  color: #49c32c; }
+
+.form-control:focus {
+  border-color: #49c32c; }
+
+.commonBtn, .commonBtn:hover {
+  background-color: #49c32c;
+  border-color: #49c32c; }
+
+.commonBtn:hover, .commonBtn:focus {
+  background-color: #49c32c !important; }
+
+.formArea, .getArea {
+  border-top: 3px solid #49c32c; }
+
+.block_quate {
+  border-left: 4px solid #49c32c; }
+
+.sidebar_item {
+  border-top: 3px solid #49c32c; }
+
+.upcoming_events ul li:hover span.date {
+  color: #49c32c; }
+
+.event_calendar {
+  border-top: 3px solid #49c32c; }
+
+@media (min-width: 768px) {
+  .header .navbar-default .navbar-nav li.apply_now a {
+    background: #49c32c !important; }
+  .header .navbar-default .navbar-nav li.apply_now a:hover {
+    background: #49c32c !important; } }

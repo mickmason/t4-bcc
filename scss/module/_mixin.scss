@@ -1,0 +1,59 @@
+@mixin only-mobile{
+	@media(max-width:479px){
+		@content;
+	}
+}
+@mixin phone{
+	@media(max-width:767px){
+		@content;
+	}
+}
+@mixin tablet-up{
+	@media(min-width:768px){
+		@content;
+	}
+}
+@mixin desktops{
+	@media(min-width:992px){
+		@content;
+	}
+}
+@mixin large-desktops{
+	@media(min-width:1200px){
+		@content;
+	}
+}
+
+@mixin box-shadow($horizontal: 0px, $vertical: 1px, $blur: 2px, $color: #CCC) {
+  -webkit-box-shadow: $horizontal $vertical $blur $color;
+  -moz-box-shadow: $horizontal $vertical $blur $color;
+  box-shadow: $horizontal $vertical $blur $color;
+}
+@mixin border-radius($radius: 5px) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin gradient($from-color, $to-color) {
+	background: $from-color; /* Old browsers */
+    background: -moz-linear-gradient(left,  $from-color 0%, #2a3a46 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,$from-color), color-stop(100%,$to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  $from-color 0%,$to-color 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  $from-color 0%,$to-color 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  $from-color 0%,$to-color 100%); /* IE10+ */
+    background: linear-gradient(to right,  $from-color 0%,$to-color 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from-color', endColorstr='$to-color',GradientType=1 ); /* IE6-9 */
+}
