@@ -73,3 +73,19 @@ ul.list h5{
 	font-size:14px;
 	line-height:normal;
 }
+.block-link {
+    display: block;
+    &::after {
+        padding-left: 4px;
+        content: "\f105";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    &:hover, &:focus, &active {
+        text-decoration: underline;
+    }
+}

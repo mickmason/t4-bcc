@@ -57,3 +57,23 @@
     background: linear-gradient(to right,  $from-color 0%,$to-color 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from-color', endColorstr='$to-color',GradientType=1 ); /* IE6-9 */
 }
+
+@mixin flexbox($direction: row, $wrap: wrap) { 
+    display: flex;
+    -mox-flex-direction: $direction;
+    -webkit-flex-direction: $direction;
+    flex-direction: $direction;
+    -mox-flex-wrap: $wrap;
+    -webkit-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+@mixin flex-grow($grow: 1, $basis: auto) { 
+
+    -mox-flex-grow: $grow;
+    -webkit-flex-grow: $grow;
+    flex-grow: $grow;
+    -mox-flex-basis: $basis;
+    -webkit-flex-basis: $basis;
+    flex-basis: $basis;
+}
+
