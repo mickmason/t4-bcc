@@ -25,13 +25,10 @@
 	display: inline-block;
 	li{
 		display: inline-block;
-		margin-right: 20px;
+		margin-right: 12px;
 		font-size: 14px;
 		color: rgba($primary-color, 1);
 		font-weight: 700;
-		@include tablet-up {
-			margin-right: 50px;
-		}
 		i{
 			padding-right: 7px;
 		}
@@ -319,7 +316,7 @@ body.bodyColor.container {
 			}
 			@include desktops {
 				font-size:14px;
-				padding:11px 15px !important;
+				padding:11px 12px !important;
 			}
 			@include large-desktops {
 				padding:11px 20px !important;
@@ -438,7 +435,7 @@ body.bodyColor.container {
 }
 .header .navbar-nav > li{
 	@include tablet-up {
-		margin-left: 15px;
+		margin-left: 12px;
 	}
 }
 .list-inline {
@@ -462,7 +459,7 @@ body.bodyColor.container {
 	}
 	.navbar-collapse ul.navbar-nav li.dropdown li.dropdown.open > a:after{
 		content: "\f106";
-	}
+	} 
 }
 .navbar-collapse ul.navbar-nav > li.dropdown > a:after{
 	position: absolute;
@@ -537,7 +534,6 @@ body.bodyColor.container {
         font-size:14px;
         color:#545454;
 		font-weight: 600;
-		text-transform:capitalize;
 		padding:9px 0 !important;
         display:block;
         background:none;
@@ -559,9 +555,18 @@ body.bodyColor.container {
         @include desktops {
             font-size:15px;
         }  
-        
+        &.navbar__dropdown__feature__cta {
+    
+            background-color: #fff;
+            text-transform: none;
+            line-height: normal;
+            padding: 12px 8px !important;
+            font-size: 13px;
+
+        }
     } 
 }
+
 .navbar__dropdown__links {
     
     h2 {
@@ -609,9 +614,12 @@ body.bodyColor.container {
     .navbar__dropdown__feature__img {
         width: 100%;
         display: block;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
+    }
+    .navbar__dropdown__feature__heading {
     }
 }
+
 
 /* Links container */
 .navbar__dropdown__links-container {
@@ -620,7 +628,7 @@ body.bodyColor.container {
 }
 /* Each links block */
 .navbar__dropdown__links {
-    @include flex-grow();
+    @include flex-grow($basis: 0);
 }
 .navbar-main__block {
     position: static;
@@ -631,14 +639,7 @@ body.bodyColor.container {
         position: static;
     }    
 }
-.dropdown-menu {
-    &.navbar__dropdown {
-        
-    }
-}
-.navbar__dropdown__content {
-    
-}
+
 
 
 @include tablet-up {
@@ -664,9 +665,22 @@ body.bodyColor.container {
         }
     }
     /* Dropdown about the section and the feature. */
-    .navbar__dropdown__about, navbar__dropdown__feature {
+    .navbar__dropdown__about, .navbar__dropdown__feature {
         @include flex-grow($grow: 1);
+        
     }
+    .navbar__dropdown__links, .navbar__dropdown__feature {
+        @include flex-grow($grow: 1);
+        a {
+            &.navbar__dropdown__feature__cta {
+                font-size: 15px;
+            }
+        }
+    }
+    
+    
+    
+    
 }
 .no-flex {
     .navbar__dropdown__body__links {
